@@ -1,4 +1,9 @@
+</html><h1> To Do List </h1>
 <% @todos.each do |todo| %>
-  <h1> <% todo.title %> </h1>
-  <p> <% todo.content %> </p>
+<div class="well">
+  <h1> <% todo.description %> </h1>
+  <p> <% todo.completed %> </p>
+</div>
 <% end %>
+
+ <p> <%= link_to 'Crear ToDo', todos_new_path %> </p>
